@@ -1,0 +1,19 @@
+#ifndef Scrolly_PixelBoard_h
+#define Scrolly_PixelBoard_h
+
+//#include "Scrolly_printf.h"
+
+class Scrolly_PixelBoard {
+  public:
+    Scrolly_PixelBoard(int pixelBoardWidth, int pixelBoardHeight, int pixelBoardChannels);
+
+    void clearPixelBoard(uint8_t r, uint8_t g, uint8_t b);
+    int channels;
+    int width;
+    int height;
+    short int ***pixelBoardBuffer;
+
+  private:
+};
+
+#endif
